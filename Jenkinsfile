@@ -27,8 +27,9 @@ pipeline
 
 		rtUpload (
 	    serverId: 'central',
-	    specPath: '/home/vamshi/.jenkins/workspace/file1/target/spec.jar',	 
-	   // buildName: 'holyFrog',
+	    specPath: '/home/vamshi/.jenkins/workspace/file1/target/spec.jar',
+	    failNoOp: true
+	    buildName: 'file1',
 	    
 		)
 		}
