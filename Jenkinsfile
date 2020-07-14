@@ -18,7 +18,7 @@ pipeline
 	 stage ('Artifactory configuration') {
             steps {
                 rtServer (
-                    id: "central",
+                    id: "Artifactory Version 7.6.2",
 		    url: 'http://localhost:8081/artifactory/project_maven',
 		    // If you're using username and password:
 		    username: 'admin',
