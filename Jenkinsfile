@@ -3,10 +3,15 @@ pipeline
   agent any 
   stages{
     stage('clone'){
+      steps{
       git 'https://github.com/devops-vamshi/simple_maven.git'
       }
+      }
       stage('build'){
-      sh "mvn clean package"
+      
+        steps{
+        sh "mvn clean package"
+        }
       }
     }
  }
