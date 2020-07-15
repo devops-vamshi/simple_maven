@@ -20,7 +20,6 @@ pipeline
                 rtServer (
                     id: "Artifactory Version 7.6.2",
 		    url: 'http://localhost:8081/artifactory/project_maven',
-		    // If you're using username and password:
 		    username: 'admin',
 		    password: 'devops@890',
                 )
@@ -28,7 +27,6 @@ pipeline
 		rtUpload (
 	    serverId: 'central',
 	    specPath: '/home/vamshi/.jenkins/workspace/file1/target/ *.jar',
-	    failNoOp: true ,
 	    buildName: 'file1',
 	    
 		)
