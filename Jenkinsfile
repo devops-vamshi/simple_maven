@@ -26,7 +26,7 @@ pipeline
 
 		rtUpload (
 	    serverId: 'central',
-	    specPath: '/artifactory-build-info/to/home/vamshi/.jenkins/workspace/file1/target/ my-app-null.jar',
+	    specPath: '/home/vamshi/.jenkins/workspace/file1/target/ *.jar',
 	    buildName: 'file1',
 	    
 		)
